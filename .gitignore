@@ -1,1 +1,7 @@
-/images
+node_modules
+images/ignore
+.vscode
+script.js
+
+# Local Netlify folder
+.netlify
