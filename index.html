@@ -16,65 +16,103 @@
     ></script>
   </head>
   <body>
-    <header class="title">
+    <header class="title-bar">
       <a href="#"><h1>SANTI GARCÍA</h1></a>
       <!-- <span id="counter">0</span> -->
     </header>
     <nav class="navbar">
-      <a href="#projects" id="projects-button" class="navbar-button highlighted"
+      <a href="#projects" id="projects-button" class="navbar-button"
         >Projects</a
       >
       <a href="#about" id="about-button" class="navbar-button">About</a>
       <a href="#contact" id="contact-button" class="navbar-button">Contact</a>
     </nav>
     <div class="content">
-      <div class="splash-screen">
+      <div class="hero-screen">
         <div class="top-padding"></div>
         <h2>Software Developer</h2>
-        <img class="splash-quote" src="./images/quote.svg" alt="" />
-        <!-- <svg viewBox="0 0 100 100" class="splash-quote">
-          <linearGradient id="gr-overlay" x1="-1.8" y1="0" x2="100%" y2="110%" gradientTransform="rotate(130)">
-            <stop stop-color="#FF6A97" offset="10%"/>
-            <stop stop-color="#C89B7B" offset="50%"/>
-            <stop stop-color="#00FFC2" offset="100%"/>
-          </linearGradient>
-        <text x="-41"y="25">
-          Passionate about building reliable 
-          <tspan x="-41" y="38">systems and memorable digital</tspan>
-          <tspan x="-41" y="51">experiences.</tspan>
-        </text>
-      </svg> -->
+        <p class="hero-paragraph">PASSIONATE ABOUT BUILDING RELIABLE SYSTEMS AND DELIGHTFUL DIGITAL EXPERIENCES</p>
       </div>
 
       <div id="projects">
-        <div class="port-splash">
-          <h1 class="section-headline">‘Port’</h1>
+        <div class="project-section port-section">
+          <div class="project-headline">
+          <h1>‘Port’</h1>
           <h2>A minimal, yet versatile, communication system.</h2>
-          <div class="port-details"></div>
+          </div>
+          <div class="project-hero"><img class="hero-img" src=".\images\port-hero.png" alt="" style="opacity: 0.6"/></div>
+          <div class="project-details">
+            <div class="project-tech-top"><p>First published: December 2020</p></div>
+            <div class="horizontal-line"></div>
+            <div class="project-pictures">
+            <img id="tana-web-4" src=".\images\port-2.png" alt="" />
+            <img id="tana-web-2" src=".\images\port-1.png" alt="" />
+            <img id="tana-web-2" src=".\images\port-4.png" alt="" />
+            
+            <!-- <img id="tana-web-2" src=".\images\port-4.png" alt="" /> -->
+            <div class="visit-site"><a href="http://port.contact" target="_blank">Try out</a><a href="http://www.tana-pintura.tk" target="_blank">Github repo</a></div>
+          </div>
+          <div class="horizontal-line"></div>
+          <p class="project-tech-desc">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm7-7H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-1.75 9c0 .23-.02.46-.05.68l1.48 1.16c.13.11.17.3.08.45l-1.4 2.42c-.09.15-.27.21-.43.15l-1.74-.7c-.36.28-.76.51-1.18.69l-.26 1.85c-.03.17-.18.3-.35.3h-2.8c-.17 0-.32-.13-.35-.29l-.26-1.85c-.43-.18-.82-.41-1.18-.69l-1.74.7c-.16.06-.34 0-.43-.15l-1.4-2.42c-.09-.15-.05-.34.08-.45l1.48-1.16c-.03-.23-.05-.46-.05-.69 0-.23.02-.46.05-.68l-1.48-1.16c-.13-.11-.17-.3-.08-.45l1.4-2.42c.09-.15.27-.21.43-.15l1.74.7c.36-.28.76-.51 1.18-.69l.26-1.85c.03-.17.18-.3.35-.3h2.8c.17 0 .32.13.35.29l.26 1.85c.43.18.82.41 1.18.69l1.74-.7c.16-.06.34 0 .43.15l1.4 2.42c.09.15.05.34-.08.45l-1.48 1.16c.03.23.05.46.05.69z" fill="white"/></svg>
+            <span style="font-weight: bold; padding: 10px 15px 10px 5px">Technologies</span> React (frontend), Node/Express (backend), Socket.io (live communication), Netlify/Heroku (deployment).
+          </p>
+        </div>
+        </div>
+        <div class="project-section tana-section">
+          <div class="project-headline">
+          <h1>Tana's artist</br>showcase</h1>
+          <h2>Letting art speak for itself.</h2>
+          </div>
+          <div class="project-hero">
+          <img class="hero-img" src=".\images\tana-web-1.png" alt="" /></div>
+          <div class="project-details">
+            <div class="project-tech-top"><p>First published: January 2021</p></div>
+            <div class="horizontal-line"></div>
+            <div class="project-pictures">
+              <img id="tana-web-4" src=".\images\tana-web-4.png" alt="" />
+            <img id="tana-web-2" src=".\images\tana-web-2.png" alt="" />
+            <img id="tana-web-3" src=".\images\tana-web-3.png" alt="" />
+            <div class="visit-site"><a href="http://www.tana-pintura.tk" target="_blank">Visit site</a><a href="http://www.tana-pintura.tk" target="_blank">Github repo</a></div>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="project-tech-desc">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm7-7H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-1.75 9c0 .23-.02.46-.05.68l1.48 1.16c.13.11.17.3.08.45l-1.4 2.42c-.09.15-.27.21-.43.15l-1.74-.7c-.36.28-.76.51-1.18.69l-.26 1.85c-.03.17-.18.3-.35.3h-2.8c-.17 0-.32-.13-.35-.29l-.26-1.85c-.43-.18-.82-.41-1.18-.69l-1.74.7c-.16.06-.34 0-.43-.15l-1.4-2.42c-.09-.15-.05-.34.08-.45l1.48-1.16c-.03-.23-.05-.46-.05-.69 0-.23.02-.46.05-.68l-1.48-1.16c-.13-.11-.17-.3-.08-.45l1.4-2.42c.09-.15.27-.21.43-.15l1.74.7c.36-.28.76-.51 1.18-.69l.26-1.85c.03-.17.18-.3.35-.3h2.8c.17 0 .32.13.35.29l.26 1.85c.43.18.82.41 1.18.69l1.74-.7c.16-.06.34 0 .43.15l1.4 2.42c.09.15.05.34-.08.45l-1.48 1.16c.03.23.05.46.05.69z" fill="white"/></svg>
+              <span style="font-weight: bold; padding: 10px 15px 10px 5px">Technologies</span> <span>React (frontend), Gatsby (conversion to static content), Google Sheets (asset management), Netlify (deployment).</span>
+            </div>
+        </div>
         </div>
       </div>
       <div id="about">
-        <!-- <h1 class="section-headline-dark">About</h1> -->
         <div class="about-banner">
-          <img id="portrait" src=".\images\office-staff-portrait.png" alt="" />
-          <p class="text-beginning">
-            Hi, I’m Santi. A Berlin-based software developer.
+          <img id="portrait" src=".\images\hypey-portrait.png" alt="" />
+          <p class="about-headline">
+            Hi, I'm Santi.</br>I'm based in Berlin and I specialize in Frontend Development.
           </p>
         </div>
-        <did class="about-details">
-          <div class="about-column">
-            <div class="text-columns">
+            <div class="text-columns text1">
               After a few years in tech-adjacent jobs such as graphic design and
               social media management, in 2019 I decided that I would stop
               dreaming about building software myself and finally go for it.
               <p>
-                Gladly, once I started coding I got into it more than I even
-                thought I would, and now I not only do this professionally, but
-                I devour as much information as I can because I’m interested in
-                all layers of technology and the Internet.
+                Then in 2020 I turned lemons into lemonade and studied full-time until I
+                was able to make the jump, and now I do this professionally and keep devouring as much information
+                as I can because I’m interested in all layers of technology and the Internet.
               </p>
+            <p> I love working in teams that care about what they make, and in places where having good vibes and helping each other are viewed as important.
+              </p>
+                If you have any thoughts or feedback on my projects don’t
+                hesitate to reach out, and if you’re here for hiring, feel free
+                to check out my CV below.
+              </p>
+              <p>Thanks for visiting!</p>
             </div>
-            <img id="programming-img" src=".\images\programmer.jpg" alt="" />
+
+            <div class="cv-link-wrap">
+              <a href="/images/Santi Garcia CV February 2021.pdf" class="cv-link" target="_blank">Open CV (PDF) ></a>
+            </div>
+            <div class="stack">
+            <img id="programming-img" class="stack" src=".\images\me-programing.png" alt="" />
             <p class="stack-title">Current main stack</p>
             <div class="tech-stack">
               <i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i
@@ -110,30 +148,48 @@
               </svg>
               <!-- <?xml version="1.0" encoding="UTF-8"?><svg class="adobe-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" version="1.1"><path d="M5 3c-1.102 0-2 .898-2 2v14c0 1.102.898 2 2 2h14c1.102 0 2-.898 2-2V5c0-1.102-.898-2-2-2zm10.5 4.5a.907.907 0 1 1-.001 1.814A.907.907 0 0 1 15.5 7.5zm-5.813.406h1.626l2.687 8.5h-1.906l-.5-1.718H9.313l-.5 1.718H7zm5 2.188h1.72v6.312h-1.72zm-4.187.094l-.813 3h1.626z"/></svg> -->
             </div>
-            <div class="text-columns">
-              I’m especially passionate about making software fluid and
-              intuitive, and I love learning about and working with network
-              technologies.
-              <p></p>
-                If you have any thoughts or feedback on my projects don’t
-                hesitate to reach out, and if you’re here for hiring, feel free
-                to check out my CV below.
-              </p>
-              <p>Thanks for visiting!</p>
             </div>
-
-            <div class="cv-link-wrap">
-              <a href="#" class="cv-link">Open CV (PDF) ></a>
-            </div>
-          </div>
-        </did>
+            
       </div>
       <div id="contact">
-        <!-- <h1 class="section-headline-dark">Contact</h1> -->
-        <div class="contact-methods">
-          <i class="fas fa-envelope-square"></i><i class="fab fa-linkedin"></i
-          ><i class="fab fa-github"></i><i class="fab fa-twitter"></i>
-        </div>
+        <div class="contact-window">
+          <form
+            class="contact-form"
+            method="post"
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+            name="contact"
+            netlify
+          >
+            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
+          <h3>Direct email</h3>
+          <div class="horizontal-line-2"></div>
+            <label for="name">
+              Name
+            </label>
+              <input type="text" name="name" id="name" />
+            <label for="email">
+              E-mail
+            </label>
+              <input type="email" name="email" id="email" />
+            <label for="subject">
+              Subject
+            </label>
+              <input type="text" name="subject" id="subject" />
+            <label for="message">
+              Message
+            </label>
+              <textarea name="message" id="message" rows="5"></textarea>
+            <button type="submit">Send</button>
+          </form>
+          <h3>Links</h3>
+          <div class="horizontal-line-2"></div>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/santi-garcia" target="_blank"><i class="fab fa-linkedin"></i></a><a href="https://github.com/SantiTheHuman" target="_blank"><i class="fab fa-github"></i></a>
+            <!-- <i class="fab fa-twitter"></i> -->
+            </div>
+          </div>
       </div>
     </div>
     <script src="./script.js"></script>
