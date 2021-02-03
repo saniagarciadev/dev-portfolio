@@ -74,7 +74,7 @@ body {
   height: fit-content;
   width: 99%;
   position: fixed;
-  bottom: 0.7vh;
+  bottom: 5px;
   left: 0.5%;
   align-items: center;
   font-size: 1.1em;
@@ -116,7 +116,6 @@ body {
 #about-button {
   display: flex;
   justify-content: center;
-
   flex: 1;
 }
 
