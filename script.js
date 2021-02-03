@@ -73,7 +73,7 @@ const contactButton = document.querySelector("#contact-button");
 let options = {
   root: null,
   rootMargin: "0px",
-  threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.1],
+  threshold: [0.1, 0.2, 0.3],
 };
 
 let callback = (entries, observer) => {
@@ -82,7 +82,7 @@ let callback = (entries, observer) => {
     const targetButton = document.querySelector(`#${entry.target.id}-button`);
     if (entry.target.id === "projects" && entry.intersectionRatio > 0.1) {
       targetButton.classList.add("highlighted");
-    } else if (entry.intersectionRatio > 0.3) {
+    } else if (entry.intersectionRatio > 0.2) {
       targetButton.classList.add("highlighted");
     } else {
       targetButton.classList.remove("highlighted");
