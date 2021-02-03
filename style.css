@@ -126,6 +126,18 @@ body {
   flex: 2;
 }
 
+@media (max-width: 550px) {
+  #projects-button {
+    flex: 1;
+  }
+  #about-button {
+    flex: 1;
+  }
+  #contact-button {
+    flex: 1;
+  }
+}
+
 .navbar a:link {
   text-decoration: none;
 }
