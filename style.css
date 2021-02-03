@@ -44,7 +44,7 @@ body {
   height: fit-content;
   width: 99%;
   position: fixed;
-  top: 0.7vh;
+  top: 5px;
   left: 0.5%;
   vertical-align: middle;
   text-align: center;
@@ -53,13 +53,13 @@ body {
   z-index: 2;
 }
 .title-bar h1 {
-  font-size: 1.6em;
+  font-size: 1.7em;
   font-weight: normal;
-  font-family: "calistogaregular";
+  font-family: "sofia_probold";
   letter-spacing: 3px;
   margin-block-start: 0.4em;
   margin-block-end: 0em;
-  padding: 3px 0px;
+  padding-bottom: 4px;
   color: #646464;
 }
 
@@ -79,9 +79,9 @@ body {
   align-items: center;
   font-size: 1.1em;
   font-weight: normal;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   border-radius: 3px;
-  font-family: "calistogaregular";
+  font-family: "sofia_probold";
   background-color: #f3f3f3;
   z-index: 2;
 }
@@ -161,6 +161,7 @@ body {
   /* justify-content: flex-start; */
   text-align: left;
   height: 100vh;
+  min-height: 600px;
   width: 100%;
   background: linear-gradient(
     223.92deg,
@@ -172,22 +173,24 @@ body {
 }
 
 .top-padding {
-  height: 10vh;
-  min-height: 45px;
+  height: 8ch;
+  /* min-height: 45px; */
   /* max-height: 70px; */
 }
 
 .hero-screen h2 {
-  font-family: "calistogaregular";
-  font-size: 3em;
+  /* position: absolute; */
+  /* padding: 2%; */
+  font-family: "sofia_probold";
+  font-size: 2em;
   line-height: 0.7em;
-  letter-spacing: -2px;
-  font-weight: normal;
+  letter-spacing: -1px;
   text-align: center;
   justify-self: flex-start;
-  margin-block-start: 0;
+  margin-block-start: 0em;
   margin-block-end: 0;
   color: #8d8c8c;
+  opacity: 0.8;
 }
 
 .hero-paragraph {
@@ -213,10 +216,6 @@ body {
   .hero-paragraph {
     font-size: 3em;
   }
-  .hero-screen h2 {
-    font-size: 2em;
-    margin-block-start: 0.5em;
-  }
 }
 
 /*~~ PROJECTS SECTION ~~*/
@@ -226,7 +225,7 @@ body {
   padding: 0px 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 100vh minmax(1fr, max-content);
+  grid-template-rows: 100vh minmax(300px, 1fr);
   /* grid-gap: 30px; */
   grid-template-areas:
     "headline hero"
@@ -258,10 +257,10 @@ body {
 .project-headline h2 {
   display: flex;
   min-width: 200px;
-  font-family: "calistogaregular";
+  font-family: "sofia_probold";
   font-size: 1.5em;
-  font-weight: normal;
-  letter-spacing: 0.5px;
+  /* font-weight: normal; */
+  letter-spacing: -1px;
   padding: 10px;
   margin-block-start: 0em;
   margin-block-end: 0em;
@@ -290,8 +289,8 @@ body {
   margin: 50px 0px;
   padding: 20px;
   border-radius: 5px;
-  font-family: "sofia_proregular";
   font-size: 1.2em;
+  font-family: "sofia_proregular";
   color: white;
   background-color: #646464b7;
   display: flex;
@@ -314,23 +313,35 @@ body {
 }
 
 .project-pictures {
+  /* grid-area: pictures; */
   width: 100%;
-  min-height: 200px;
-  grid-area: pictures;
+  height: fit-content;
   display: grid;
-  grid-template-columns: repeat(4, minmax(max-content, auto));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: auto;
   grid-gap: 5px;
   margin: 20px 0;
   /* padding: 20px; */
   /* margin-top: 50px; */
 }
-
-.project-pictures img {
-  object-fit: contain;
+.picture-container {
   height: 100%;
-  max-width: 100%;
-  border-radius: 3px;
+  max-height: 80vh;
+  width: 100%;
+}
+.horizontal-picture {
+  grid-column: span 2;
+  /* grid-row: span 2; */
+}
+/* .vertical-picture {
+  grid-row: span 2;
+} */
+.project-pictures img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  /* border-radius: 3px; */
   /* padding: 10px; */
 }
 
@@ -341,7 +352,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: "calistogaregular";
+  font-family: "sofia_probold";
   color: #e0e0e0;
 }
 .visit-site a {
@@ -383,17 +394,17 @@ body {
     width: 150%;
     height: auto;
   }
-  .project-pictures {
+  /* .project-pictures {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-  }
-  .project-pictures img {
+  } */
+  /* .project-pictures img {
     object-fit: contain;
     width: 100%;
     height: auto;
     padding: 10px;
-  }
+  } */
   .project-tech-desc {
     flex-direction: column;
     align-items: flex-start;
@@ -424,16 +435,20 @@ body {
     width: 100%;
     height: auto;
   }
-  .project-pictures {
+  /* .project-pictures {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-  }
-  .project-pictures img {
+  } */
+  /* .project-pictures img {
     object-fit: contain;
     width: 100%;
     height: auto;
     padding: 30px 10px;
+  } */
+  .horizontal-picture {
+    grid-column: span 1;
+    /* grid-row: span 2; */
   }
   .visit-site {
     font-size: 1.3em;
@@ -473,15 +488,15 @@ body {
   grid-template-rows: auto;
   grid-template-areas:
     "banner banner banner banner banner"
-    ". . text1 text1 ."
+    ". . text text ."
     ". stack stack stack ."
-    ". . text2 text2 ."
     ". cvlink cvlink cvlink .";
 }
 
 .about-banner {
   grid-area: banner;
   width: 100%;
+  height: fit-content;
   min-height: 60vh;
   padding-top: 20px;
   background: linear-gradient(
@@ -492,28 +507,36 @@ body {
   );
   display: grid;
   grid-template-columns: 30% 30% 30% 10%;
-  grid-template-rows: auto;
+  /* grid-template-rows: auto; */
   grid-template-areas: "portrait headline headline .";
 }
-#portrait {
+.portrait-container {
   grid-area: portrait;
-  height: 70%;
-  object-fit: contain;
+  height: 100%;
+  width: 100%;
   display: flex;
-  align-self: flex-end;
-  justify-self: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+#portrait {
+  max-height: 90%;
+  max-width: 200%;
+  object-fit: contain;
   opacity: 0.6;
 }
+
 .about-headline {
   grid-area: headline;
   font-size: 2em;
-  letter-spacing: 0.5px;
+  letter-spacing: -1px;
+  line-height: 1.4em;
   color: #646464;
-  font-family: "calistogaregular";
+  font-family: "sofia_probold";
   text-align: right;
   align-self: flex-start;
-  /* margin-top: 50px; */
-  /* justify-content: flex-end; */
+  position: relative;
+  z-index: 1;
 }
 
 @media (min-width: 550px) {
@@ -523,20 +546,21 @@ body {
     grid-template-rows: auto;
     grid-template-areas:
       "banner banner banner banner banner"
-      ". . text1 text1 ."
+      ". . text text ."
       ". stack stack stack ."
-      ". . text2 text2 ."
       ". . cvlink cvlink cvlink";
   }
 
   .about-banner {
-    /* padding: 0 10%; */
     display: grid;
     grid-template-columns: 10% 30% 25% 25% 10%;
     grid-template-rows: auto;
     grid-template-areas: ". portrait headline headline .";
   }
-
+  #portrait {
+    height: 70%;
+    max-width: 150%;
+  }
   .about-headline {
     height: 60%;
     text-align: left;
@@ -553,42 +577,46 @@ body {
     grid-template-rows: auto;
     grid-template-areas:
       "banner banner banner banner banner"
-      ". . text1 text1 ."
+      ". . text text ."
       ". . stack stack ."
-      ". . text2 text2 ."
-      ". . . cvlink .";
+      ". . cvlink cvlink .";
   }
 
   .about-banner {
-    /* padding: 0 10%; */
+    grid-area: banner;
     display: grid;
     grid-template-columns: 10% 30% 25% 25% 10%;
     grid-template-rows: auto;
     grid-template-areas: ". portrait headline headline .";
   }
+  .about-headline {
+    height: 63%;
+    text-align: left;
+    font-size: 2em;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-start;
+  }
+  #portrait {
+    height: 70%;
+    max-width: 100%;
+  }
 }
 
-.text-columns {
-  /* margin-top: 15px; */
+.about-text {
+  grid-area: text;
+  font-family: "sofia_proregular";
   columns: 2;
   margin: 20px 0px;
 }
 
-.text1 {
-  grid-area: text1;
-}
-
-.text2 {
-  grid-area: text2;
-}
-
 @media (max-width: 900px) {
-  .text-columns {
+  .about-text {
     columns: 1;
   }
 }
 
-.text-columns p {
+.about-text p {
   /* flex: 1; */
   padding-right: 20px;
 }
@@ -612,33 +640,32 @@ body {
   z-index: 0;
 }
 
-.stack-title {
+/* .stack-title {
   position: relative;
   margin-top: -105px;
   margin-bottom: 0;
   padding-left: 20px;
   padding-top: 15px;
   color: #f3f3f3;
-  font-family: "calistogaregular";
+  font-family: "sofia_probold";
   font-weight: normal;
   letter-spacing: 3px;
   z-index: 1;
   background-color: #0000005d;
-}
+} */
 
 .tech-stack {
   position: relative;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
+  height: 90px;
+  margin-top: -94px;
   font-size: 40px;
   color: #f3f3f3;
-  height: 70px;
-  padding-top: 15px;
-  margin-bottom: 10px;
-  z-index: 1;
   background-color: #0000005d;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1;
 }
 .icon {
   width: 40px;
@@ -651,24 +678,23 @@ body {
   margin-top: -3px;
 }
 
-.cv-link-wrap {
-  grid-area: cvlink;
-  text-align: right;
-  margin-top: 30px;
-  margin-bottom: 150px;
-  padding-right: 70px;
-}
-
 .cv-link {
-  width: fit-content;
-  padding: 3px 20px 5px 23px;
-  color: #f3f3f3;
+  grid-area: cvlink;
+  width: 100%;
   background-color: #383838;
   border-radius: 50px;
+  font-size: 1.4em;
+  font-family: "sofia_proregular";
+  text-align: center;
+  color: #f3f3f3;
   text-decoration: none;
+  opacity: 0.9;
+  margin-top: 30px;
+  margin-bottom: 150px;
+  padding: 7px 0px 9px 0px;
 }
 .cv-link:hover {
-  opacity: 0.9;
+  opacity: 1;
 }
 
 /*~~ CONTACT SECTION ~~*/
