@@ -328,7 +328,6 @@ body {
 }
 
 .project-pictures {
-  /* grid-area: pictures; */
   width: 100%;
   height: fit-content;
   display: grid;
@@ -336,8 +335,6 @@ body {
   grid-template-rows: auto;
   grid-gap: 5px;
   margin: 20px 0;
-  /* padding: 20px; */
-  /* margin-top: 50px; */
 }
 .picture-container {
   height: 100%;
@@ -346,18 +343,12 @@ body {
 }
 .horizontal-picture {
   grid-column: span 2;
-  /* grid-row: span 2; */
 }
-/* .vertical-picture {
-  grid-row: span 2;
-} */
 .project-pictures img {
   object-fit: cover;
   height: 100%;
   width: 100%;
   padding: 10px;
-  /* border-radius: 3px; */
-  /* padding: 10px; */
 }
 
 .visit-site {
@@ -399,13 +390,10 @@ body {
     font-size: 4em;
   }
   .project-hero {
-    /* background-color: white; */
     display: flex;
     justify-content: flex-end;
-    /* align-items: flex-start; */
   }
   .hero-img {
-    /* height: 50%; */
     width: 150%;
     height: auto;
   }
@@ -469,6 +457,17 @@ body {
     #ffffff 2.88%,
     #dfcae4 41.42%,
     #bd8bcf 102.88%
+  );
+}
+
+/*~~ PROJECT: BARBERSHOP ~~*/
+.barbershop-section {
+  color: white;
+  background: linear-gradient(
+    228.05deg,
+    #8d8d8d 2.88%,
+    #80968f 41.42%,
+    #beffe8 102.88%
   );
 }
 
@@ -658,7 +657,7 @@ body {
   width: 100%;
   background-color: #383838;
   border-radius: 50px;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-family: "sofia_proregular";
   text-align: center;
   color: #f3f3f3;
@@ -679,12 +678,12 @@ body {
   padding: 30px 0px;
   font-family: "sofia_proregular";
   color: #383838;
-  background: linear-gradient(
+  /* background: linear-gradient(
     47.55deg,
     #3fc06a9f -10%,
     #40b09b54 60%,
     rgba(175, 213, 204, 0.03) 97.85%
-  );
+  ); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -711,6 +710,12 @@ body {
 
 .contact-window h3 {
   margin-block-end: 0.2em;
+}
+
+.contact-window h2 {
+  margin-block-end: 0.2em;
+  font-size: 2em;
+  color: #d3b8b2;
 }
 
 .horizontal-line-2 {
@@ -749,24 +754,26 @@ body {
 
 .contact-form button {
   padding: 5px;
-  margin: 10px 0;
+  margin: 20px 0;
   border: none;
   border-radius: 3px;
   font-family: "sofia_proregular";
-  color: white;
-  background-color: #494949b9;
+  font-size: 1.2em;
+  /* color: white; */
+  background-color: #d3b8b2;
+  transition: 0.2s;
 }
 
 .contact-form button:hover {
   cursor: pointer;
-  background-color: #494949;
+  background-color: #d1a5a5;
 }
 
 .contact-links {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  font-size: 25px;
+  font-size: 2em;
   /* color: #494949a2;   */
   /* width: 350px; */
   margin: auto;
@@ -774,11 +781,11 @@ body {
 }
 
 .contact-links a {
-  color: #494949ce;
+  color: #d3b8b2;
 }
 .contact-links a:visited {
-  color: #494949ce;
+  color: #d3b8b2;
 }
 .contact-links a:hover {
-  color: #494949;
+  color: #d1a5a5;
 }
