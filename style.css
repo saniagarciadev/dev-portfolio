@@ -40,20 +40,20 @@ body {
 }
 
 /*~~ SITE HEADLINE ~~*/
-.title-bar {
-  height: fit-content;
-  width: 99%;
-  position: fixed;
-  top: 7px;
-  left: 0.5%;
+header {
   display: flex;
-  justify-content: center;
-  text-align: center;
-  /* border-radius: 3px; */
-  /* background-color: #f3f3f3; */
-  z-index: 2;
+  flex-direction: column;
+  height: fit-content;
+  width: 100%;
+  background: linear-gradient(
+    190deg,
+    #c2c2c2 37.58%,
+    #d3b8b2 64.91%,
+    #e9a177c4 104.6%
+  );
 }
-.title-bar h1 {
+
+header h1 {
   font-size: 1.7em;
   font-weight: normal;
   font-family: "sofia_probold";
@@ -63,9 +63,18 @@ body {
   /* margin-inline-start: -0.4em; */
   color: #646464;
 }
-
-.title-bar a:link {
-  text-decoration: none;
+header h2 {
+  font-family: "sofia_proregular";
+  font-size: 2em;
+  line-height: 0.7em;
+  letter-spacing: -1px;
+  text-align: center;
+  justify-self: flex-start;
+  margin-block-start: 0em;
+  /* margin-block-end: -4em; */
+  /* padding: 100px; */
+  color: #ffffff;
+  opacity: 0.8;
 }
 
 /*~~ NAVBAR ~~*/
@@ -99,7 +108,6 @@ body {
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-  .title-bar,
   .navbar {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -161,69 +169,6 @@ body {
   color: #f3f3f3;
   background-color: #494949;
   /* border-radius: 3px; */
-}
-
-/*~~ HERO SCREEN ~~*/
-.hero-screen {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  /* height: 15vh; */
-  height: fit-content;
-  width: 100%;
-  background: linear-gradient(
-    190deg,
-    #c2c2c2 37.58%,
-    #d3b8b2 64.91%,
-    #e9a177c4 104.6%
-  );
-}
-
-.top-padding {
-  height: 8ch;
-}
-
-.hero-screen h2 {
-  font-family: "sofia_proregular";
-  font-size: 2em;
-  line-height: 0.7em;
-  letter-spacing: -1px;
-  text-align: center;
-  justify-self: flex-start;
-  margin-block-start: 0em;
-  /* margin-block-end: -4em; */
-  /* padding: 100px; */
-  color: #ffffff;
-  opacity: 0.8;
-}
-
-.hero-paragraph {
-  margin: auto;
-  /* margin-top: 45%; */
-  /* padding: 1%; */
-  text-align: left;
-  max-width: 100%;
-  max-height: 87%;
-  font-family: "sofia_probold";
-  font-size: 5em;
-  line-height: 0.73em;
-  letter-spacing: -5px;
-  color: white;
-}
-
-@media (max-width: 640px) {
-  .hero-paragraph {
-    font-size: 4em;
-    max-width: 90%;
-    line-height: 0.77em;
-  }
-}
-@media (max-width: 400px) {
-  .hero-paragraph {
-    font-size: 4em;
-    letter-spacing: -2px;
-    line-height: 1em;
-  }
 }
 
 /*~~ PROJECTS SECTION ~~*/
@@ -686,7 +631,7 @@ body {
     grid-template-areas: ". portrait headline headline .";
   }
   .about-label {
-    height: 83%;
+    height: 73%;
     font-size: 3em;
     text-align: left;
     display: flex;
@@ -694,7 +639,7 @@ body {
     justify-content: flex-start;
   }
   .about-headline {
-    height: 63%;
+    height: 53%;
     text-align: left;
     font-size: 2em;
     display: flex;
@@ -702,8 +647,8 @@ body {
     justify-content: flex-start;
   }
   #portrait {
-    height: 70%;
-    /* max-width: 100%; */
+    max-height: 70%;
+    width: 120%;
   }
 }
 
