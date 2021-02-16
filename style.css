@@ -176,7 +176,6 @@ header h2 {
 .project-section {
   text-align: left;
   width: 100%;
-  /* padding: 0px 20px; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 85vh minmax(0px, 1fr);
@@ -497,12 +496,11 @@ header h2 {
 /*~~ PROJECT: BARBERSHOP ~~*/
 .barbershop-section {
   color: white;
-
   background: linear-gradient(
     234.67deg,
-    rgba(162, 231, 194, 0.8) -3.64%,
-    rgba(138, 199, 166, 0.8) 39.19%,
-    rgba(71, 171, 117, 0.8) 94.27%
+    rgba(141, 218, 176, 0.8) -3.64%,
+    rgba(113, 180, 144, 0.8) 39.19%,
+    rgba(34, 77, 54, 0.8) 94.27%
   );
 }
 
