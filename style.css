@@ -61,7 +61,6 @@ header h1 {
   letter-spacing: 3px;
   margin-block-start: 0.7em;
   margin-block-end: 0.2em;
-  /* margin-inline-start: -0.4em; */
   color: #646464;
 }
 header h2 {
@@ -72,8 +71,6 @@ header h2 {
   text-align: center;
   justify-self: flex-start;
   margin-block-start: 0em;
-  /* margin-block-end: -4em; */
-  /* padding: 100px; */
   color: #ffffff;
   opacity: 0.8;
 }
@@ -91,9 +88,7 @@ header h2 {
   font-size: 1.1em;
   font-weight: normal;
   letter-spacing: 1px;
-  /* border-radius: 3px; */
   font-family: "sofia_probold";
-  /* background-color: #f3f3f3; */
   z-index: 2;
 }
 
@@ -159,7 +154,6 @@ header h2 {
 .navbar a:hover {
   color: #f3f3f3;
   background-color: #494949;
-  /* border-radius: 3px; */
 }
 
 .navbar a:active {
@@ -169,7 +163,6 @@ header h2 {
 .highlighted {
   color: #f3f3f3;
   background-color: #494949;
-  /* border-radius: 3px; */
 }
 
 /*~~ PROJECTS SECTION ~~*/
@@ -190,7 +183,6 @@ header h2 {
   grid-area: headline;
   display: flex;
   flex-direction: column;
-  /* align-content: flex-end; */
   justify-content: flex-end;
   height: fit-content;
   padding: 10ch 10px 0px 30px;
@@ -199,7 +191,6 @@ header h2 {
 .project-headline h1 {
   display: flex;
   padding: 10px;
-  /* font-family: "sofia_probold"; */
   font-size: 5em;
   line-height: 0.85em;
   letter-spacing: -2px;
@@ -209,7 +200,6 @@ header h2 {
 .project-headline h2 {
   display: flex;
   min-width: 200px;
-  /* font-family: "sofia_probold"; */
   font-size: 2em;
   letter-spacing: -1px;
   padding: 10px;
@@ -225,8 +215,6 @@ header h2 {
   font-family: "sofia_proregular";
   text-align: left;
   color: white;
-  /* border: 1px solid white; */
-  /* background-color: rgba(219, 219, 219, 0.4); */
 }
 .project-tag-dark {
   width: 100%;
@@ -235,7 +223,6 @@ header h2 {
   font-family: "sofia_proregular";
   text-align: left;
   color: #363636;
-  /* background-color: #646464b7; */
 }
 
 .project-hero {
@@ -246,7 +233,6 @@ header h2 {
   justify-content: flex-end;
 }
 .hero-img {
-  /* height: 100%; */
   width: 140%;
   height: auto;
 }
@@ -278,9 +264,6 @@ header h2 {
   opacity: 0.7;
 }
 .hidden-details > * {
-  /* position: absolute; */
-  /* height: 0px; */
-  /* display: none; */
   opacity: 0;
 }
 
@@ -291,7 +274,6 @@ header h2 {
 
 .expand-button {
   position: relative;
-  /* top: -42px; */
   padding: 30px 0;
   width: 100%;
   text-align: center;
@@ -352,7 +334,6 @@ header h2 {
 
 .project-pictures {
   width: 100%;
-  /* height: auto; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: auto;
@@ -364,7 +345,6 @@ header h2 {
 
 .picture-container {
   height: 300px;
-  /* max-height: 80vh; */
   width: 100%;
 }
 .horizontal-picture {
@@ -452,7 +432,6 @@ header h2 {
     width: 130%;
     margin-top: -100px;
     margin-bottom: 0px;
-    /* width: auto; */
   }
   .picture-container {
     height: fit-content;
@@ -532,7 +511,6 @@ header h2 {
   );
   display: grid;
   grid-template-columns: 30% 30% 30% 10%;
-  /* grid-template-rows: auto; */
   grid-template-areas: "portrait headline headline .";
 }
 .portrait-container {
@@ -600,7 +578,6 @@ header h2 {
   }
   #portrait {
     height: 60%;
-    /* max-width: 150%; */
   }
   .about-label {
     height: 80%;
@@ -668,7 +645,6 @@ header h2 {
 }
 
 .about-text p {
-  /* flex: 1; */
   padding-right: 20px;
 }
 
@@ -737,12 +713,6 @@ header h2 {
   padding: 30px 0px;
   font-family: "sofia_proregular";
   color: #383838;
-  /* background: linear-gradient(
-    47.55deg,
-    #3fc06a9f -10%,
-    #40b09b54 60%,
-    rgba(175, 213, 204, 0.03) 97.85%
-  ); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -818,7 +788,6 @@ header h2 {
   border-radius: 3px;
   font-family: "sofia_proregular";
   font-size: 1.2em;
-  /* color: white; */
   background-color: #d3b8b2;
   transition: 0.2s;
 }
@@ -833,8 +802,6 @@ header h2 {
   flex-direction: row;
   justify-content: space-around;
   font-size: 2em;
-  /* color: #494949a2;   */
-  /* width: 350px; */
   margin: auto;
   padding: 20px 0px;
 }
