@@ -16,7 +16,6 @@ let options = {
 
 let callback = (entries, observer) => {
   entries.forEach((entry) => {
-    console.log(`${entry.target.id}: ${entry.intersectionRatio}`);
     const targetButton = document.querySelector(`#${entry.target.id}-button`);
     if (entry.target.id === "projects" && entry.intersectionRatio > 0.1) {
       targetButton.classList.add("highlighted");
