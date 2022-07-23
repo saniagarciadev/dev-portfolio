@@ -202,6 +202,7 @@ header h2 {
   display: flex;
   min-width: 200px;
   font-size: 2em;
+  font-weight: lighter;
   letter-spacing: -1px;
   padding: 10px;
   margin-block-start: 0em;
