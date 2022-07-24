@@ -515,6 +515,16 @@ header h2 {
   grid-template-columns: 30% 30% 30% 10%;
   grid-template-areas: "portrait headline headline .";
 }
+
+.about-banner-text {
+  grid-area: headline;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  text-align: left;
+}
+
 .portrait-container {
   grid-area: portrait;
   height: 100%;
@@ -532,30 +542,20 @@ header h2 {
 }
 
 .about-label {
-  grid-area: headline;
   height: 90%;
   font-family: "sofia_probold";
   font-size: 2em;
-  text-align: right;
   color: white;
   opacity: 0.7;
-  display: flex;
-  align-self: flex-end;
-  justify-content: flex-end;
 }
 
 .about-headline {
   grid-area: headline;
-  height: 70%;
-  font-size: 2em;
   letter-spacing: -1px;
   line-height: 1.4em;
+  margin-block-end: 2em;
   color: #646464;
-  font-family: "sofia_probold";
-  text-align: right;
-  display: flex;
-  align-self: flex-end;
-  justify-content: flex-start;
+  font-family: "sofia_proregular";
   position: relative;
   z-index: 1;
 }
@@ -583,11 +583,9 @@ header h2 {
   }
   .about-label {
     height: 80%;
-    justify-content: flex-start;
   }
   .about-headline {
     height: 60%;
-    text-align: left;
     font-size: 1.7em;
   }
 }
@@ -599,7 +597,6 @@ header h2 {
     grid-template-areas:
       "banner banner banner banner banner"
       ". . text text ."
-      ". . stack stack ."
       ". . cvlink cvlink .";
   }
 
@@ -607,24 +604,19 @@ header h2 {
     grid-area: banner;
     display: grid;
     grid-template-columns: 10% 30% 25% 25% 10%;
-    grid-template-rows: auto;
-    grid-template-areas: ". portrait headline headline .";
-  }
+    grid-template-rows: 10vh 1fr auto;
+    grid-template-areas: ". . . . ."
+      ". portrait headline headline ."
+      ". . stack stack .";
+}
+
   .about-label {
     height: 73%;
     font-size: 3em;
-    text-align: left;
-    display: flex;
-    align-self: flex-end;
-    justify-content: flex-start;
   }
   .about-headline {
     height: 53%;
-    text-align: left;
     font-size: 2em;
-    display: flex;
-    align-self: flex-end;
-    justify-content: flex-start;
   }
   #portrait {
     max-height: 70%;
@@ -632,26 +624,29 @@ header h2 {
   }
 }
 
-.about-text {
+.about-small-text {
   grid-area: text;
   font-size: 1.15em;
   font-family: "sofia_proregular";
   columns: 2;
-  margin: 20px 0px;
+  margin: 50px 0px;
 }
 
 @media (max-width: 900px) {
-  .about-text {
+  .about-small-text {
     columns: 1;
   }
 }
 
-.about-text p {
+.about-small-text p {
   padding-right: 20px;
 }
 
-.stack {
-  grid-area: stack;
+.tech-stack-bg {
+  grid-column: 1 / 6;
+  grid-row: 3;
+  height: 90px;
+  background-color: #0000005d;
 }
 
 #programming-img {
@@ -666,18 +661,17 @@ header h2 {
 }
 
 .tech-stack {
-  position: relative;
+  grid-area: stack;
+  align-self: flex-end;
   height: 90px;
-  margin-top: 94px;
   font-size: 40px;
   color: #f3f3f3;
-  background-color: #0000005d;
-  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   z-index: 1;
 }
+
 .icon {
   width: 40px;
   fill: #f3f3f3;
@@ -700,8 +694,6 @@ header h2 {
   color: #f3f3f3;
   text-decoration: none;
   opacity: 0.9;
-  margin-top: 30px;
-  margin-bottom: 150px;
   padding: 7px 0px 9px 0px;
 }
 .cv-link:hover {
@@ -712,7 +704,7 @@ header h2 {
 #contact {
   width: 100%;
   min-height: 100vh;
-  padding: 100px 0px;
+  padding: 200px 0px;
   font-family: "sofia_proregular";
   color: #383838;
   display: flex;
