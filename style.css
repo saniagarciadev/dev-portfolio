@@ -488,6 +488,7 @@ header h2 {
 /*~~ ABOUT SECTION ~~*/
 #about {
   width: 100%;
+  padding-bottom: 200px;
   text-align: left;
   display: grid;
   grid-template-columns: 5% 30% 30% 30% 5%;
@@ -702,22 +703,24 @@ header h2 {
 
 /*~~ CONTACT SECTION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 #contact {
-  width: 100%;
-  min-height: 100vh;
-  padding: 200px 0px;
-  font-family: "sofia_proregular";
-  color: #383838;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  min-height: 100vh;
+  padding: 200px 0px;
+  font-family: "sofia_proregular";
+  font-weight: normal;
+  text-align: center;
+  color: #f3f3f3;
+  background-color: #494949;
+  transition: 0.3s;
 }
 
 .contact-window {
   width: 30%;
+  max-width: 700px;
   min-height: fit-content;
   text-align: left;
-  border-radius: 5px;
 }
 
 @media (max-width: 768px) {
@@ -745,7 +748,7 @@ header h2 {
   height: 1px;
   width: 100%;
   margin-bottom: 15px;
-  background-color: #383838;
+  background-color: #f3f3f3;
   border-radius: 50px;
   opacity: 0.5;
 }
