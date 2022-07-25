@@ -13,6 +13,10 @@ body {
   box-sizing: border-box;
 }
 
+h2 {
+  font-size: 3em;
+font-family: "sofia_probold";}
+
 /*~~ IMPORT FONTS ~~*/
 @font-face {
   font-family: "calistogaregular";
@@ -189,41 +193,14 @@ header h2 {
   padding: 10ch 10px 0px 30px;
   font-family: "sofia_proregular";
 }
-.project-headline h1 {
-  display: flex;
-  padding: 10px;
-  font-size: 5em;
-  line-height: 0.85em;
-  letter-spacing: -2px;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-}
+
 .project-headline h2 {
-  display: flex;
-  min-width: 200px;
-  font-size: 2em;
-  font-weight: lighter;
-  letter-spacing: -1px;
-  padding: 10px;
   margin-block-start: 0em;
   margin-block-end: 0em;
   margin-inline-start: 0em;
-  margin-inline-end: 0em;
 }
-.project-tag-light {
-  width: 100%;
-  margin-left: -35px;
-  padding: 3px 60px 5px 55px;
-  font-family: "sofia_proregular";
-  text-align: left;
-  color: white;
-}
+
 .project-tag-dark {
-  width: 100%;
-  margin-left: -35px;
-  padding: 3px 60px 5px 55px;
-  font-family: "sofia_proregular";
-  text-align: left;
   color: #363636;
 }
 
@@ -544,10 +521,7 @@ header h2 {
 
 .about-label {
   height: 90%;
-  font-family: "sofia_probold";
-  font-size: 2em;
   color: white;
-  opacity: 0.7;
 }
 
 .about-headline {
@@ -643,13 +617,6 @@ header h2 {
   padding-right: 20px;
 }
 
-.tech-stack-bg {
-  grid-column: 1 / 6;
-  grid-row: 3;
-  height: 90px;
-  background-color: #0000005d;
-}
-
 #programming-img {
   position: relative;
   width: 100%;
@@ -663,24 +630,24 @@ header h2 {
 
 .tech-stack {
   grid-area: stack;
-  align-self: flex-end;
-  height: 90px;
-  font-size: 40px;
-  color: #f3f3f3;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  height: 90px;
+  font-size: 40px;
+  color: #0000005d;
+  opacity: 0.8;
   z-index: 1;
 }
 
 .icon {
   width: 40px;
-  fill: #f3f3f3;
+  fill: #0000005d;
 }
 
 .adobe-icon {
   width: 45px;
-  fill: #f3f3f3;
+  fill: #0000005d;
   margin-top: -3px;
 }
 
